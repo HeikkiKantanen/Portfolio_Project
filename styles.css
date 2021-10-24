@@ -1,0 +1,642 @@
+:root {
+    --text-color: black;
+    --font: 'Quicksand', sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #f6f6f6ff;
+    font-family: var(--font);
+    color: #000;
+  }
+  
+  input,
+  textarea {
+    font-family: var(--font);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    color: var(--text-color);
+    font-family: var(--font);
+    font-size: 5rem;
+    font-weight: 550;
+    margin-bottom: 25px;
+  }
+
+  h2 {
+    margin: 2rem 0;
+  }
+  
+  h3 {
+    margin: 2rem 0;
+  }
+
+  li a p {
+   color: black;
+   display: inline-block;
+   flex-direction: row;
+   margin-left: 30px;
+   margin-right: 5px;
+  }
+  
+  .heikki {
+    margin-left: -12rem;
+    margin-top: 2.5rem;
+    line-height: 1;
+    text-align: left;
+    font-size: 1.2rem;
+    color: white;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+  }
+
+  a:hover {
+    filter: brightness(125%);
+    font-weight: bold;
+    border: solid 1px 1px 1px gray;
+    color: goldenrod;
+  }
+
+  .background {
+    background-color: #f6f6f6ff;
+  }
+  
+  /**************** Header area ****************/
+
+  
+  
+  header {
+    background: url("./Photos_portfolio/pexels-pixabay-210205.jpg") no-repeat fixed center center/cover;
+  }
+  
+  .main_nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-icon {
+    text-decoration: none;
+    display: none;
+  }
+  
+  header .container {
+    position: relative;
+    padding: 0.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: inline-block;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    /* padding: 0 1rem; */
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header nav ul li a,
+  .logo a {
+    text-decoration: none;
+    color: white;
+    padding-top: 5px;
+    margin: 15px;
+  }
+
+  header nav ul li a p {
+    color: white;
+  }
+
+  .active header nav ul li a,
+  .logo a   {
+    color: black;
+  }
+
+  .active   header nav ul li a p {
+    color: black;
+  }
+
+  .logo:hover {
+    filter: brightness(120%);
+    transform: translate(0, 0.2rem);
+    }
+
+  .logo a {
+    font-size: 2rem;
+  }
+  
+  /**************** Hero-Banner area ****************/
+  
+  .hero-banner {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .hero-banner h1 {
+    font-family: var(--font);
+    font-size: 5rem;
+    color: black;
+    text-align: center;
+  } */
+  
+  /**************** For all sections ****************/
+  
+  section {
+    padding: 3rem 1rem;
+    min-height: 500px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /**************** Projects area ****************/
+  
+  .card {
+    background-color: goldenrod;
+    width: 20rem;
+    height: 30rem;
+    /* padding: 10px; */
+    margin: 3rem;
+  }
+  
+  .card img {
+    height: 200px;
+    width: 20rem;
+    object-fit: cover;
+    background-color: var(--text-color);
+  }
+  
+  .card h3,
+  .card p {
+    margin: 20px;
+    text-align: center;
+  }
+
+  .card a {
+    margin-top: 60px;
+    margin-left: 30px;
+  }
+
+  .card:hover {
+    filter: brightness(120%);
+    transform: translate(0, 0.2rem);
+    box-shadow: 0 4px 8px 0 #333;
+  }
+  
+  /**************** About me area ****************/
+  
+  #about-me {
+    background-color: white;
+    color: black;
+  }
+  
+  #about-me img {
+    float: right;
+    margin-left: 5rem;
+    width: 200px;
+    box-shadow: 0 4px 8px 0 #333;
+  }
+
+  #about-me img:hover {
+    float: right;
+    margin-left: 5rem;
+    transform: scale(140%);
+    box-shadow: 0 4px 8px 0 #333;
+  }
+
+  #about-me p {
+    text-align: left;
+  }
+
+  h3 {
+    font-family: var(--font);
+  }
+
+  /**************** Skills area ****************/
+
+  .skills-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-card {
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    height: 15rem;
+    padding: 10px;
+    margin: 3rem;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+
+  p {
+    line-height: 2;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .skills-card img {
+    height: 4rem;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-card:hover {
+    filter: brightness(120%);
+    transform: translate(0, 0.2rem);
+    box-shadow: 0 4px 8px 0 #333;
+  }
+
+
+  /**************** Footer area ****************/
+
+  
+  footer {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+    height: 85vh;
+  }
+
+  footer h2 {
+    color: white;
+    font-family: var(--font);
+  }
+  
+  .form-group {
+    padding: 15px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 20%;
+    color: #ff9b00;
+    font-family: var(--font);
+  }
+  
+  input,
+  textarea {
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 30vw;
+    font-family: var(--font);
+    outline: none;
+  }
+  
+  input[type="submit"] {
+    width: 200px;
+    background-color: #ff9b00;
+    color: white;
+    font-size: inherit;
+    padding: 1rem;
+    margin: 20px;
+    font-family: var(--font);
+  }
+
+  input[type="submit"]:hover {
+    filter: brightness(95%);
+    transform: translate(0, 0.2rem);
+    box-shadow: 0 4px 8px 0 lightgrey;
+  }
+
+  footer img {
+    height: 2rem;
+  }
+
+  .footer-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-radius: 3px;
+  }
+
+  .footer-icons img:hover {
+    filter: brightness(85%);
+    transform: translate(0, 0.2rem);
+  }
+
+  .footer-icons img {
+    margin: 20px;
+  }
+
+  footer p {
+    color: white;
+    font-size: 10px;
+  }
+
+  /**************** Hiding the menu icon on large display ****************/
+
+  @media (min-width: 577px) {
+    .nav-icon {
+      display: none;
+    }
+  }
+
+  /**************** Tablet support ****************/
+  
+  @media (max-width: 568px) {
+    header nav ul {
+      text-align: center;
+    }
+
+    .content {
+      flex-wrap: wrap;
+    }
+
+    .logo img,
+    .logo-light img {
+      height: 3rem;
+    }
+
+    .hero-banner h1 {
+      font-size: 3.5rem;
+      top: 5vh;
+      position: relative;
+    }
+
+  }
+  
+  /**************** Mobile support ****************/
+
+  /**************** HEADER ****************/
+  
+  @media (max-width: 568px) {
+    header .container {
+      padding: 1rem;
+    }
+
+    .main_nav {
+      align-content: center;
+      align-items: center;
+    }
+
+     
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  nav ul li {
+    display: flex;
+    /* padding: 0 1rem; */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li a,
+  .logo a {
+    text-decoration: none;
+    color: white;
+    padding-top: 0.5px;
+    margin: 0.5px;
+    
+
+    header nav ul li a p {
+    display: none;
+  }
+  
+  .hero-banner h1 {
+      font-size: 1.5rem;
+      top: 5vh;
+      position: relative;
+  }
+
+  .menu-icon {
+      display: unset;
+      margin-left: 3rem;
+  }
+
+  .link-wrapper {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center;
+      align-items: center; */
+      height: 60vh;
+      width: auto;
+      transform: translateY(-150%);
+      transition: 0.5s ease-in-out;
+      background-color: black;
+  }
+
+  .link .link1,
+  .link2 .link3,
+  .link4 .link5,
+  .link6 {
+      margin: 1rem;
+      padding: 1rem;
+
+
+  }
+
+  .link-wrapper.show {
+      transform: translateY(1%);
+  }
+
+  header nav ul {
+      margin-top: 0.5rem;
+      text-align: center;
+  }
+
+  header nav ul li {
+      /* padding: 0.5rem 2rem; */
+  }
+  
+  .hero-banner {
+      height: 100vh;
+      width: 100%;
+  }
+  
+  .hero-banner h2 {
+      font-size: 1.5rem;
+  }
+
+  .logo img {
+      height: 2.5rem;
+  }
+
+  .heikki {
+      margin-left: -7.5rem;
+      margin-top: 1rem;
+      line-height: 0.9;
+      text-align: left;
+      font-size: 1.2rem;
+      color: white;
+  }
+
+  .content {
+      flex-direction: column;
+  }
+
+    /************ PROJECTS ***************/
+
+  #projects {
+      align-content: center;
+      margin-right: 2rem;
+      margin-left: -2rem;
+  }
+
+  #projects h2 {
+      margin-left: 3rem;
+  }
+
+  .card {
+      width: 90%;
+      margin-top: 1rem;
+      align-content: center;
+      align-items: center;
+  }
+
+  .card img {
+      width: 100%;
+  }
+
+    /************ ABOUT ME **********/
+
+  #about-me {
+      align-content: center;
+  }
+
+  #about-me h2 {
+      margin-left: 1rem;
+  }
+
+  .about-me {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-right: 5rem;
+  }
+
+  .image-wrapper {
+      padding-right: 3rem;
+      padding-bottom: 18rem;
+  }
+
+    .about-me-p {
+      text-align: center;
+    }
+  
+
+    .skills-content {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .skills-card {
+      margin: 1rem;
+    }
+
+    .skills-content img {
+      height: 4rem;
+      margin: 3px 0;
+    }
+
+    /* FOOTER  */
+
+    footer {
+      height: 200vh;
+    }
+
+    input,
+    textarea,
+    label {
+      width: 100%;
+    }
+
+    .form-group {
+      padding: 0.5rem;
+      margin: 0.5rem;
+    }
+
+    label {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-icons {
+      display: flex;
+      flex-direction: column;
+    }
+
+    a:hover {
+      font-size: 0.9rem;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .nav-container {
+      display: flex;
+    }
+  
+    .nav {
+      position: fixed;
+      right: 0;
+      top: 40px;
+      padding: 0;
+      height: calc(100vh - 70px);
+      width: 7.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    .nav ul li {
+      float: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      border-bottom: solid 1px;
+    }
+
+    .nav ul li a {
+      padding: 10px;
+    }
+
+    .nav-icon img {
+      width: 2rem;
+    }
+
+  }
+  
