@@ -1,6 +1,7 @@
 :root {
 	--text-color: black;
 	--font: "Quicksand", sans-serif;
+	--font-color: white;
 }
 
 * {
@@ -179,38 +180,106 @@ section {
 
 .content {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
-/**************** Projects area ****************/
+/**************** Front End Projects area ****************/
 
-.card {
+h2 {
+	margin-top: 0px;
+}
+
+.front-end-card {
 	background-color: goldenrod;
-	width: 20rem;
-	height: 30rem;
+	width: 16rem;
+	height: 25rem;
 	/* padding: 10px; */
-	margin: 3rem;
+	/* margin-left: 3rem;
+	margin-right: 3rem; */
 }
 
-.card img {
-	height: 200px;
-	width: 20rem;
+.project-image {
+	height: 150px;
+	width: 16rem;
 	object-fit: cover;
 	background-color: var(--text-color);
 }
 
-.card h3,
-.card p {
-	margin: 20px;
+.icon {
+	width: 2rem;
+}
+
+.icon:hover {
+	filter: brightness(85%);
+	transform: translate(0, 0.2rem);
+}
+
+.front-end-card h3 {
+	margin: 10px;
+	margin-bottom: 20px;
 	text-align: center;
 }
 
-.card a {
-	margin-top: 60px;
-	margin-left: 30px;
+.link-header {
+	margin-top: -10px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
 }
 
-.card:hover {
+.front-end-card a {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: 800;
+	color: whitesmoke;
+}
+
+.front-end-card a:hover {
+	filter: brightness(125%);
+	font-weight: bold;
+	transform: translate(0, 0.2rem);
+}
+
+.front-end-card:hover {
+	filter: brightness(120%);
+	transform: translate(0, 0.2rem);
+	box-shadow: 0 4px 8px 0 #333;
+}
+
+/**************** Back End Projects area ****************/
+
+#back-end-projects {
+	background-color: white;
+}
+
+.back-end-card {
+	background-color: goldenrod;
+	width: 16rem;
+	height: 20rem;
+	/* padding: 10px; */
+	margin: 3rem;
+}
+
+.project-image {
+	height: 150px;
+	width: 16rem;
+	object-fit: cover;
+	background-color: var(--text-color);
+}
+
+.back-end-card h3,
+.back-end-card p {
+	margin: 10px;
+	text-align: center;
+}
+
+.back-end-card a {
+	margin-top: 5px;
+	text-align: center;
+}
+
+.back-end-card:hover {
 	filter: brightness(120%);
 	transform: translate(0, 0.2rem);
 	box-shadow: 0 4px 8px 0 #333;
@@ -219,14 +288,13 @@ section {
 /**************** About me area ****************/
 
 #about-me {
-	background-color: white;
 	color: black;
 }
 
 #about-me img {
 	float: right;
 	margin-left: 5rem;
-	width: 200px;
+	width: 150px;
 	box-shadow: 0 4px 8px 0 #333;
 }
 
@@ -246,6 +314,10 @@ h3 {
 }
 
 /**************** Skills area ****************/
+
+#skills {
+	background-color: white;
+}
 
 .skills-content {
 	display: flex;
@@ -291,12 +363,14 @@ footer {
 	background-color: #333;
 	padding: 1rem;
 	text-align: center;
-	height: 90vh;
+	height: 85vh;
 }
 
 footer h2 {
-	color: white;
+	color: var(--font-color);
 	font-family: var(--font);
+	margin-top: 0px;
+	margin-bottom: 5px;
 }
 
 .form-group {
@@ -315,6 +389,7 @@ textarea {
 	padding: 1rem;
 	border-radius: 5px;
 	border: none;
+	margin-left: -50px;
 	width: 30vw;
 	font-family: var(--font);
 	outline: none;
@@ -345,8 +420,8 @@ footer img {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin-top: 10px;
-	padding-top: 10px;
+	margin-top: 5px;
+	padding-top: 5px;
 	border-radius: 3px;
 }
 
@@ -360,6 +435,7 @@ footer img {
 }
 
 footer p {
+	margin-top: 0px;
 	color: white;
 	font-size: 10px;
 }
