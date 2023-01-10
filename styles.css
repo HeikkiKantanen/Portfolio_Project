@@ -180,10 +180,21 @@ section {
 
 .content {
 	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	justify-content: space-between;
+	flex-direction: row;
 }
 
 /**************** Front End Projects area ****************/
+
+.front-end-projects-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+}
 
 h2 {
 	margin-top: 0px;
@@ -193,9 +204,8 @@ h2 {
 	background-color: goldenrod;
 	width: 16rem;
 	height: 25rem;
-	/* padding: 10px; */
-	/* margin-left: 3rem;
-	margin-right: 3rem; */
+	margin-bottom: 3rem;
+	box-shadow: 0 4px 8px 0 #333;
 }
 
 .project-image {
@@ -206,7 +216,8 @@ h2 {
 }
 
 .icon {
-	width: 2rem;
+	/* width: 1rem; */
+	height: 2rem;
 }
 
 .icon:hover {
@@ -221,14 +232,19 @@ h2 {
 }
 
 .link-header {
-	margin-top: -10px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 	text-align: center;
 	font-size: 18px;
 	font-weight: 400;
 }
 
+.hosted-link-header {
+	margin-top: -25px;
+}
+
 .front-end-card a {
-	margin-top: 10px;
+	margin-top: -10px;
 	margin-bottom: 30px;
 	text-align: center;
 	font-weight: 800;
@@ -253,12 +269,20 @@ h2 {
 	background-color: white;
 }
 
+.back-end-projects-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
 .back-end-card {
 	background-color: goldenrod;
 	width: 16rem;
-	height: 20rem;
-	/* padding: 10px; */
-	margin: 3rem;
+	height: 25rem;
+	box-shadow: 0 4px 8px 0 #333;
+	margin: 2rem;
 }
 
 .project-image {
@@ -268,10 +292,17 @@ h2 {
 	background-color: var(--text-color);
 }
 
-.back-end-card h3,
-.back-end-card p {
+.back-end-card h3 {
 	margin: 10px;
 	text-align: center;
+}
+
+.back-end-link-header {
+	margin-top: 40px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .back-end-card a {
