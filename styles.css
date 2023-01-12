@@ -263,6 +263,39 @@ h2 {
 	box-shadow: 0 4px 8px 0 #333;
 }
 
+.projects-second-row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.second-row-front-end-card {
+	background-color: goldenrod;
+	width: 16rem;
+	height: 25rem;
+	/* margin-bottom: 3rem; */
+	box-shadow: 0 4px 8px 0 #333;
+	margin: 1.8rem;
+}
+
+.icon-second-row {
+	margin-left: 7rem;
+	height: 2rem;
+}
+
+.icon-second-row:hover {
+	filter: brightness(85%);
+	transform: translate(0, 0.2rem);
+}
+
+.second-row-front-end-card h3 {
+	margin: 10px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
 /**************** Back End Projects area ****************/
 
 #back-end-projects {
