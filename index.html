@@ -70,16 +70,16 @@
 										<p class="p3">|</p></a
 									>
 								</li>
+                <li>
+                  <a class="link4" href="#contact"
+                    >Contact me</a>
+                </li>
 								<!-- <li>
 									<a class="link4" href="./gallery.html"
 										>Gallery
 										<p class="p4">|</p></a
 									>
 								</li> -->
-								<li>
-									<a class="link4" href="#contact"
-										>Contact me
-								</li>
 							</ul>
 						</nav>
 					</div>
@@ -285,7 +285,7 @@
 
             I'm a junior Full Stack Developer and I have vocational qualification in ICT. I studied in a fast track coding program designed for adult career changers in Business College Helsinki. The program lasted about 1,5 years and I graduated in December 2022. I have also previously graduated as a bachelor of automotive engineering from Metropolia School of Applied Sciences. </br>
 
-            </br> I'm enthusiastic about learning new things and I love to create web pages and applications. I like to keep the design clean and fresh and I'm also interested about UI design. I feel more at home with front end coding but I would like to get better in the back end as well. I also have experience of mobile application coding from my internship period. </br>
+            </br> I'm enthusiastic about learning new things and I love to create web pages and applications. I like to keep the design clean and fresh and I'm also interested about UI design. I feel more at home with front end coding but I would like to get better in the back end as well. I also have experience of mobile application coding with React Native from my internship period. </br>
 
             </br> I'm always happy to connect with new people and open for new interesting opportunities. So feel free to send me a message, email or connect in LinkedIn. 
 					</p>
@@ -318,22 +318,22 @@
 		<footer>
 			<div id="contact" class="container">
 				<h2>Contact me</h2>
-				<form>
+				<form method="POST" name="contact" data-netlify="true">
 					<div class="form-group">
 						<label for="first">First name</label>
-						<input type="text" id="first" />
+						<input type="text" id="first" required />
 					</div>
 					<div class="form-group">
 						<label for="last">Last name</label>
-						<input type="text" id="last" />
+						<input type="text" id="last" required />
 					</div>
 					<div class="form-group">
 						<label for="email">Email</label>
-						<input type="text" id="email" />
+						<input type="text" id="email" required />
 					</div>
 					<div class="form-group">
 						<label class="message" for="message">Message</label>
-						<textarea name="message" id="message"></textarea>
+						<textarea name="message" id="message" required></textarea>
 					</div>
 					<input type="submit" value="Send" />
 				</form>
@@ -341,9 +341,9 @@
 					<a class="igloo" href="#top"
 						><img src="./Icons_light/igloo (1).svg" alt="Igloo-icon"
 					/></a>
-					<a href="https://www.instagram.com/hessu/" target="_blank"
+					<!-- <a href="https://www.instagram.com/hessu/" target="_blank"
 						><img src="./Icons_light/instagram (1).svg" alt="Instagram-icon"
-					/></a>
+					/></a> -->
 					<a
 						href="https://www.linkedin.com/in/heikki-kantanen-0b91721a0"
 						target="_blank"

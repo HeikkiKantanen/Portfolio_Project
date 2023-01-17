@@ -26,7 +26,7 @@ const scrollFunction = () => {
 		document.querySelector(".p").style.color = "black";
 		document.querySelector(".p2").style.color = "black";
 		document.querySelector(".p3").style.color = "black";
-		// document.querySelector(".p4").style.color = "black";
+		document.querySelector(".p4").style.color = "black";
 		// document.querySelector(".p5").style.color = "black";
 	} else {
 		document.querySelector(".main_nav").style.backgroundColor = "transparent";
@@ -40,7 +40,7 @@ const scrollFunction = () => {
 		document.querySelector(".p").style.color = "white";
 		document.querySelector(".p2").style.color = "white";
 		document.querySelector(".p3").style.color = "white";
-		// document.querySelector(".p4").style.color = "white";
+		document.querySelector(".p4").style.color = "white";
 		// document.querySelector(".p5").style.color = "white";
 	}
 };
