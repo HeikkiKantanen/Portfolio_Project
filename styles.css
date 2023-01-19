@@ -625,8 +625,8 @@ footer p {
 	}
 
 	.heikki {
-		margin-right: 17rem;
-		margin-bottom: 1rem;
+		margin-right: 6.5rem;
+		margin-bottom: 1.8rem;
 	}
 
 	nav ul {
@@ -649,6 +649,7 @@ footer p {
 		color: white;
 		padding-top: 0.5px;
 		margin: 0.5px;
+		margin-left: 1rem;
 	}
 
 	header nav ul li a p {
@@ -659,6 +660,8 @@ footer p {
 		font-size: 1.5rem;
 		top: 5vh;
 		position: center;
+		font-size: 30px;
+		margin-bottom: 7rem;
 	}
 
 	.menu-icon {
@@ -700,26 +703,22 @@ footer p {
 	} */
 
 	.hero-banner {
-		height: 115vh;
+		height: 110vh;
 		width: 100%;
-	}
-
-	.hero-banner h2 {
-		font-size: 1.5rem;
 	}
 
 	.logo img {
 		height: 2.5rem;
 	}
 
-	.heikki {
-		margin-left: -7.5rem;
+	/* .heikki {
+		margin-left: -7rem;
 		margin-top: 1rem;
 		line-height: 0.9;
 		text-align: left;
 		font-size: 1.2rem;
 		color: white;
-	}
+	} */
 
 	.content {
 		flex-direction: column;
@@ -733,8 +732,8 @@ footer p {
 		margin-left: -2rem;
 	} */
 
-	#projects h2 {
-		margin-left: 3rem;
+	#front-end-projects h2 {
+		margin-left: 2.5rem;
 	}
 
 	.card {
@@ -766,7 +765,8 @@ footer p {
 		margin-left: 1rem;
 	}
 
-	.second-row-front-end-card {
+	#back-end-projects h2 {
+		margin-left: 2.5rem;
 	}
 
 	.back-end-projects-content {
@@ -785,7 +785,13 @@ footer p {
 	}
 
 	#about-me h2 {
-		margin-left: 1rem;
+		margin-left: 2.5rem;
+	}
+
+	#about-me p {
+		margin-right: -1rem;
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 
 	.about-me {
@@ -803,16 +809,24 @@ footer p {
 
 	.image-wrapper {
 		margin-right: 10rem;
-		padding-bottom: 18rem;
+		padding-bottom: 16rem;
 	}
+	/* 
+	.text-container {
+		width: 400px;
+	} */
 
-	.about-me-p {
+	/* #about-me p {
 		text-align: center;
-		margin: 2rem;
-		width: 450px;
-	}
+		font-size: 16px;
+		width: 420px;
+	} */
 
 	/************ SKILLS **********/
+
+	#skills h2 {
+		margin-left: 2.5rem;
+	}
 
 	.skills-content {
 		/* flex-direction: column;
@@ -841,13 +855,14 @@ footer p {
 	/* FOOTER  */
 
 	footer {
-		height: 220vh;
+		height: 115vh;
 	}
 
-	input,
 	textarea,
+	input,
 	label {
-		width: 100%;
+		width: 80%;
+		margin-left: 0.5rem;
 	}
 
 	.form-group {
@@ -861,7 +876,7 @@ footer p {
 
 	.footer-icons {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 	}
 
 	a:hover {
