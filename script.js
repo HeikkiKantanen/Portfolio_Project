@@ -4,7 +4,13 @@ const navbar = document.querySelector(".nav");
 const logo = document.querySelector(".logo");
 const linkWrapper = document.querySelector(".link-wrapper");
 const menuIcon = document.querySelector(".menu-icon");
-const links = document.querySelector(".link");
+const links = document.querySelector(
+	".link",
+	".link1",
+	".link2",
+	".link3",
+	".link4"
+);
 
 window.onscroll = function () {
 	scrollFunction();
